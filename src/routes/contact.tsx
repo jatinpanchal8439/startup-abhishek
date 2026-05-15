@@ -5,9 +5,9 @@ import { Header, Footer } from "@/components/site-chrome";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Free SEO Audit & Strategy Call | Rankforge" },
+      { title: "Contact — Free SEO Audit & Strategy Call | DrishtiSEO" },
       { name: "description", content: "Book a free 30-minute SEO strategy call. We'll audit your site live and hand you a 90-day growth plan." },
-      { property: "og:title", content: "Contact Rankforge" },
+      { property: "og:title", content: "Contact DrishtiSEO" },
       { property: "og:description", content: "Free SEO audit + strategy call." },
       { property: "og:url", content: "/contact" },
     ],
@@ -33,7 +33,7 @@ function ContactPage() {
           <h2 className="text-2xl font-bold mb-4">Free SEO audit</h2>
           <p className="text-muted-foreground mb-8">Drop your site and goals. We'll send back a 5-page audit + a Loom walkthrough within 48 hours. No fluff, no sales call required.</p>
           <div className="space-y-4 text-sm">
-            <div className="flex gap-3"><span className="text-primary">📩</span> hello@rankforge.studio</div>
+            <div className="flex gap-3"><span className="text-primary">📩</span> hello@drishtiseo.studio</div>
             <div className="flex gap-3"><span className="text-primary">📞</span> +91 98765 43210</div>
             <div className="flex gap-3"><span className="text-primary">📍</span> HSR Layout, Bengaluru</div>
             <div className="flex gap-3"><span className="text-primary">⏱</span> Mon–Fri, 10am–7pm IST</div>

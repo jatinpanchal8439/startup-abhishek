@@ -5,9 +5,9 @@ import founderImg from "@/assets/founder-abhishek.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Abhishek Sharma — Founder of Rankforge | SEO & AI Studio" },
-      { name: "description", content: "Meet Abhishek Sharma, founder of Rankforge — a Shamli-based SEO and AI growth studio helping tech brands rank #1 on Google and ship AI-powered products." },
-      { property: "og:title", content: "About Rankforge — Founded by Abhishek Sharma" },
+      { title: "About Abhishek Sharma — Founder of DrishtiSEO | SEO & AI Studio" },
+      { name: "description", content: "Meet Abhishek Sharma, founder of DrishtiSEO — a Shamli-based SEO and AI growth studio helping tech brands rank #1 on Google and ship AI-powered products." },
+      { property: "og:title", content: "About DrishtiSEO — Founded by Abhishek Sharma" },
       { property: "og:description", content: "Developer-led SEO and AI growth studio in Bengaluru, India." },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: founderImg },
@@ -21,9 +21,9 @@ export const Route = createFileRoute("/about")({
           "@type": "Person",
           name: "Abhishek Sharma",
           jobTitle: "Founder & CEO",
-          worksFor: { "@type": "Organization", name: "Rankforge" },
+          worksFor: { "@type": "Organization", name: "DrishtiSEO" },
           image: founderImg,
-          description: "Full-stack developer and SEO strategist. Founder of Rankforge — an SEO and AI growth studio.",
+          description: "Full-stack developer and SEO strategist. Founder of DrishtiSEO — an SEO and AI growth studio.",
           address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressCountry: "IN" },
           knowsAbout: ["SEO", "Artificial Intelligence", "FastAPI", "Next.js", "Digital Marketing", "Content Strategy"],
           sameAs: ["https://twitter.com/abhisharmadev", "https://linkedin.com/in/abhisharmadev"],
@@ -44,8 +44,8 @@ const values = [
 const milestones = [
   { y: "2019", t: "First freelance SEO project — ranked a SaaS startup #1 for 'invoice software India' in 4 months." },
   { y: "2021", t: "Quit corporate job. Built first AI micro-SaaS (a content brief generator) — crossed ₹1L MRR." },
-  { y: "2023", t: "Founded Rankforge. Started serving Indian D2C and SaaS brands with full-stack growth." },
-  { y: "2025", t: "9-person team. 47+ clients ranked #1. Launched Rankforge Templates marketplace." },
+  { y: "2023", t: "Founded DrishtiSEO. Started serving Indian D2C and SaaS brands with full-stack growth." },
+  { y: "2025", t: "9-person team. 47+ clients ranked #1. Launched DrishtiSEO Templates marketplace." },
 ];
 
 function AboutPage() {
@@ -72,7 +72,7 @@ function AboutPage() {
             <div className="absolute -inset-4 bg-mint-gradient opacity-30 blur-3xl rounded-full" />
             <img
               src={founderImg}
-              alt="Abhishek Sharma, Founder & CEO of Rankforge — SEO and AI growth studio  in Shamli"
+              alt="Abhishek Sharma, Founder & CEO of DrishtiSEO — SEO and AI growth studio  in Shamli"
               className="relative rounded-3xl border border-border shadow-card-soft w-full max-w-md mx-auto"
               loading="eager"
             />
@@ -82,9 +82,9 @@ function AboutPage() {
 
       {/* Story */}
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <h2 className="text-4xl font-bold mb-8">The Rankforge story.</h2>
+        <h2 className="text-4xl font-bold mb-8">The DrishtiSEO story.</h2>
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
-          <p>Rankforge started as a side project in 2019 — a couple of FastAPI engineers (me and a college friend) who got tired of watching great products get buried on page 4 of Google. We started ranking our own tools, then friends', then clients'.</p>
+          <p>DrishtiSEO started as a side project in 2019 — a couple of FastAPI engineers (me and a college friend) who got tired of watching great products get buried on page 4 of Google. We started ranking our own tools, then friends', then clients'.</p>
           <p>Today we're a 9-person studio in HSR Layout, Shamli helping tech founders win the search game while shipping AI products on the side. Most agencies treat SEO as a checklist. We treat it as engineering — site speed, schema, internal links, indexability.</p>
           <p>The bet is simple: write the post nobody else can write, ship the tool nobody else has shipped, and let Google do the distribution.</p>
         </div>

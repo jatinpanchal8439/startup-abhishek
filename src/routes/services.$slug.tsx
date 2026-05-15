@@ -15,10 +15,10 @@ type Keyword = {
 const KEYWORDS: Record<string, Keyword> = {
   "seo-services-india": {
     slug: "seo-services-india",
-    title: "SEO Services in India — Rank #1 on Google | Rankforge",
+    title: "SEO Services in India — Rank #1 on Google | DrishtiSEO",
     h1: "SEO Services in India that actually move rankings.",
     intent: "Best SEO Services India",
-    intro: "Looking for SEO services in India that go beyond keyword stuffing and shady link farms? Rankforge is a Bengaluru-based SEO agency helping Indian SaaS, D2C and tech brands climb to page 1 of Google through technical SEO, content velocity, and authority link building.",
+    intro: "Looking for SEO services in India that go beyond keyword stuffing and shady link farms? DrishtiSEO is a Bengaluru-based SEO agency helping Indian SaaS, D2C and tech brands climb to page 1 of Google through technical SEO, content velocity, and authority link building.",
     bullets: [
       "Technical SEO audits with Ahrefs, SEMrush, Screaming Frog",
       "On-page optimisation for Indian + global keywords",
@@ -28,7 +28,7 @@ const KEYWORDS: Record<string, Keyword> = {
       "Pricing from ₹25,000/month — no long contracts",
     ],
     faqs: [
-      { q: "How much do SEO services cost in India?", a: "At Rankforge, SEO retainers start at ₹25,000/month for early-stage startups and scale to ₹95,000/month for serious growth plans. One-off audits start at ₹15,000." },
+      { q: "How much do SEO services cost in India?", a: "At DrishtiSEO, SEO retainers start at ₹25,000/month for early-stage startups and scale to ₹95,000/month for serious growth plans. One-off audits start at ₹15,000." },
       { q: "How long does SEO take to show results in India?", a: "Most of our clients see meaningful keyword movement within 60–90 days, with significant traffic lift around month 4–6. SEO is compounding, not instant." },
       { q: "Do you guarantee #1 rankings?", a: "No reputable SEO agency can. We guarantee process, transparency, and measurable improvement — not specific ranking positions, because Google's algorithm is not in our control." },
     ],
@@ -40,7 +40,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "ai-saas-development": {
     slug: "ai-saas-development",
-    title: "AI Micro-SaaS Development Services | Rankforge",
+    title: "AI Micro-SaaS Development Services | DrishtiSEO",
     h1: "Ship your AI micro-SaaS in 6 weeks.",
     intent: "AI Micro-SaaS Development",
     intro: "We design, build and launch AI-powered micro-SaaS products for founders, agencies and indie hackers. Stack: FastAPI + Next.js + OpenAI/Claude + Stripe. From idea to first paying customer in under 60 days.",
@@ -65,10 +65,10 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "digital-marketing-bengaluru": {
     slug: "digital-marketing-bengaluru",
-    title: "Digital Marketing Agency in Bengaluru | Rankforge",
+    title: "Digital Marketing Agency in Bengaluru | DrishtiSEO",
     h1: "Bengaluru's growth studio for tech brands.",
     intent: "Digital Marketing Agency Bengaluru",
-    intro: "Rankforge is a Bengaluru-based digital marketing agency specialising in SEO, performance ads, and content for tech and SaaS brands. We pair technical execution with creative storytelling — and we ship faster than agencies 5x our size.",
+    intro: "DrishtiSEO is a Bengaluru-based digital marketing agency specialising in SEO, performance ads, and content for tech and SaaS brands. We pair technical execution with creative storytelling — and we ship faster than agencies 5x our size.",
     bullets: [
       "Google Ads + Meta Ads management",
       "Landing page CRO + A/B testing",
@@ -89,7 +89,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "seo-for-saas-startups": {
     slug: "seo-for-saas-startups",
-    title: "SEO for SaaS Startups — Programmatic Growth | Rankforge",
+    title: "SEO for SaaS Startups — Programmatic Growth | DrishtiSEO",
     h1: "SEO for SaaS startups, by SaaS founders.",
     intent: "SEO for SaaS Startups",
     intro: "Most SEO agencies don't understand SaaS. We do — we've built and ranked our own micro-SaaS tools. We help SaaS founders rank for high-intent buyer keywords, build comparison pages that convert, and execute programmatic SEO at scale.",
@@ -113,7 +113,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "fastapi-development-services": {
     slug: "fastapi-development-services",
-    title: "FastAPI Development Services in India | Rankforge",
+    title: "FastAPI Development Services in India | DrishtiSEO",
     h1: "FastAPI development for AI products.",
     intent: "FastAPI Development Services",
     intro: "Need a fast, async, production-ready Python backend? We build FastAPI services for AI-powered SaaS products — from LLM orchestration to vector search to webhook pipelines. Used by 30+ shipped products.",
@@ -135,7 +135,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "openai-integration-services": {
     slug: "openai-integration-services",
-    title: "OpenAI & Claude Integration Services | Rankforge",
+    title: "OpenAI & Claude Integration Services | DrishtiSEO",
     h1: "Ship AI features without burning your budget.",
     intent: "OpenAI Integration Services",
     intro: "We integrate GPT-4, Claude, Gemini, and open-source LLMs into your existing product or build new AI-native features from scratch. Streaming responses, prompt caching, evals, and cost monitoring included.",
@@ -157,7 +157,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "google-ads-management-india": {
     slug: "google-ads-management-india",
-    title: "Google Ads Management Services India | Rankforge",
+    title: "Google Ads Management Services India | DrishtiSEO",
     h1: "Google Ads that actually pay back.",
     intent: "Google Ads Management India",
     intro: "We manage Google Ads campaigns for Indian SaaS, D2C and B2B brands — focusing on profitable keywords, tight ad groups, and landing pages that convert. No vanity clicks. Real ROAS.",
@@ -179,7 +179,7 @@ const KEYWORDS: Record<string, Keyword> = {
   },
   "content-marketing-saas": {
     slug: "content-marketing-saas",
-    title: "Content Marketing for SaaS Companies | Rankforge",
+    title: "Content Marketing for SaaS Companies | DrishtiSEO",
     h1: "Content that ranks, converts, and compounds.",
     intent: "Content Marketing for SaaS",
     intro: "We write SaaS content that ranks on Google and converts readers into customers. Topic clusters, comparison posts, expert interviews, and product-led content — all backed by keyword research and SEO best practices.",
@@ -211,7 +211,7 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ params, loaderData }) => {
     const d = loaderData?.data;
-    if (!d) return { meta: [{ title: "Service | Rankforge" }] };
+    if (!d) return { meta: [{ title: "Service | DrishtiSEO" }] };
     return {
       meta: [
         { title: d.title },
@@ -229,7 +229,7 @@ export const Route = createFileRoute("/services/$slug")({
             "@context": "https://schema.org",
             "@type": "Service",
             name: d.intent,
-            provider: { "@type": "Organization", name: "Rankforge" },
+            provider: { "@type": "Organization", name: "DrishtiSEO" },
             areaServed: { "@type": "Country", name: "India" },
             description: d.intro,
           }),

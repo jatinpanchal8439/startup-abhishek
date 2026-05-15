@@ -4,9 +4,9 @@ import { Header, Footer } from "@/components/site-chrome";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Rankforge — SEO + AI Growth Studio for Tech Brands" },
+      { title: "DrishtiSEO — SEO + AI Growth Studio for Tech Brands" },
       { name: "description", content: "Rank #1 on Google with SEO, AI micro-SaaS, viral content, and premium dev templates. India's growth studio for ambitious founders." },
-      { property: "og:title", content: "Rankforge — SEO + AI Growth Studio" },
+      { property: "og:title", content: "DrishtiSEO — SEO + AI Growth Studio" },
       { property: "og:description", content: "SEO services, AI tools, content & dev assets that help tech brands grow." },
       { property: "og:url", content: "/" },
       { property: "og:type", content: "website" },
@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebSite",
-          name: "Rankforge",
+          name: "DrishtiSEO",
           url: "/",
           potentialAction: {
             "@type": "SearchAction",
@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          name: "Rankforge",
+          name: "DrishtiSEO",
           description: "SEO + AI growth studio for tech brands in India.",
           founder: { "@type": "Person", name: "Abhishek Sharma" },
           address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressCountry: "IN" },
@@ -91,7 +91,7 @@ function Index() {
               Grow louder.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 leading-relaxed">
-              Rankforge is an SEO + AI growth studio for tech founders. We rank your site, ship your micro-SaaS, blow up your Reels, and sell your dev templates — all under one roof.
+              DrishtiSEO is an SEO + AI growth studio for tech founders. We rank your site, ship your micro-SaaS, blow up your Reels, and sell your dev templates — all under one roof.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link to="/contact" className="px-7 py-4 rounded-full bg-mint-gradient text-primary-foreground font-semibold shadow-glow hover:scale-105 transition">

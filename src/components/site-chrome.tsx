@@ -70,12 +70,12 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold mb-3">Get in touch</p>
-          <p className="text-muted-foreground">hello@rankforge.studio</p>
+          <p className="text-muted-foreground">hello@drishtiseo.studio</p>
           <p className="text-muted-foreground">Bengaluru, IN</p>
         </div>
       </div>
       <div className="border-t border-border/50 py-6 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Rankforge Studio. Built to rank.
+        © {new Date().getFullYear()} DrishtiSEO. Built to rank.
       </div>
     </footer>
   );

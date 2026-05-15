@@ -4,9 +4,9 @@ import { Header, Footer } from "@/components/site-chrome";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — SEO, AI SaaS, Content & Dev Templates | Rankforge" },
+      { title: "Services — SEO, AI SaaS, Content & Dev Templates | DrishtiSEO" },
       { name: "description", content: "Full-stack growth services: SEO ranking, AI micro-SaaS, viral tech content, premium dev templates, and digital marketing for tech brands." },
-      { property: "og:title", content: "Services | Rankforge" },
+      { property: "og:title", content: "Services | DrishtiSEO" },
       { property: "og:description", content: "SEO, AI SaaS, content creation, dev templates, and digital marketing." },
       { property: "og:url", content: "/services" },
     ],

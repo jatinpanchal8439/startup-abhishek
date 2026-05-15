@@ -4,9 +4,9 @@ import { Header, Footer } from "@/components/site-chrome";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing — Transparent SEO & Growth Plans | Rankforge" },
+      { title: "Pricing — Transparent SEO & Growth Plans | DrishtiSEO" },
       { name: "description", content: "Simple, transparent pricing for SEO, AI SaaS builds, content creation and digital marketing. Plans from ₹15,000/month." },
-      { property: "og:title", content: "Pricing | Rankforge" },
+      { property: "og:title", content: "Pricing | DrishtiSEO" },
       { property: "og:description", content: "Plans from ₹15,000/month. No long contracts." },
       { property: "og:url", content: "/pricing" },
     ],
@@ -17,9 +17,9 @@ export const Route = createFileRoute("/pricing")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Product",
-          name: "Rankforge Growth Plans",
+          name: "DrishtiSEO Growth Plans",
           description: "SEO, AI SaaS, content & digital marketing retainers for tech brands.",
-          brand: { "@type": "Brand", name: "Rankforge" },
+          brand: { "@type": "Brand", name: "DrishtiSEO" },
           offers: [
             { "@type": "Offer", name: "Starter", price: "15000", priceCurrency: "INR", url: "/pricing" },
             { "@type": "Offer", name: "Growth", price: "45000", priceCurrency: "INR", url: "/pricing" },
