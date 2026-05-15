@@ -5,9 +5,9 @@ import founderImg from "@/assets/founder-abhishek.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Abhishek Sharma — Founder of DrishtiSEO | SEO & AI Studio" },
-      { name: "description", content: "Meet Abhishek Sharma, founder of DrishtiSEO — a Shamli-based SEO and AI growth studio helping tech brands rank #1 on Google and ship AI-powered products." },
-      { property: "og:title", content: "About DrishtiSEO — Founded by Abhishek Sharma" },
+      { title: "About DrishtiSEO — SEO & AI Growth Studio" },
+      { name: "description", content: "Meet the founders of DrishtiSEO — Abhishek Sharma (Founder & CEO) and Jatin Vishwakarma (Co-founder & Fullstack Developer). A Shamli-based SEO and AI growth studio helping tech brands rank #1 on Google." },
+      { property: "og:title", content: "About DrishtiSEO — Founded by Abhishek Sharma & Jatin Vishwakarma" },
       { property: "og:description", content: "Developer-led SEO and AI growth studio in Bengaluru, India." },
       { property: "og:url", content: "/about" },
       { property: "og:image", content: founderImg },
@@ -18,15 +18,23 @@ export const Route = createFileRoute("/about")({
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "Person",
-          name: "Abhishek Sharma",
-          jobTitle: "Founder & CEO",
-          worksFor: { "@type": "Organization", name: "DrishtiSEO" },
-          image: founderImg,
-          description: "Full-stack developer and SEO strategist. Founder of DrishtiSEO — an SEO and AI growth studio.",
+          "@type": "Organization",
+          name: "DrishtiSEO",
+          founder: [
+            {
+              "@type": "Person",
+              name: "Abhishek Sharma",
+              jobTitle: "Founder & CEO",
+              description: "Technology Lead and Application Support Manager with over 10 years of deep expertise in the Fintech and Banking domains.",
+            },
+            {
+              "@type": "Person",
+              name: "Jatin Vishwakarma",
+              jobTitle: "Co-founder & Fullstack Developer",
+              description: "Fullstack developer specializing in modern web technologies.",
+            }
+          ],
           address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressCountry: "IN" },
-          knowsAbout: ["SEO", "Artificial Intelligence", "FastAPI", "Next.js", "Digital Marketing", "Content Strategy"],
-          sameAs: ["https://twitter.com/abhisharmadev", "https://linkedin.com/in/abhisharmadev"],
         }),
       },
     ],
@@ -54,28 +62,34 @@ function AboutPage() {
       <Header />
 
       <section className="bg-hero pt-20 pb-20">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <p className="text-primary text-sm uppercase tracking-widest mb-3">About the founder</p>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-[1.05]">
-              Hi, I'm <span className="text-gradient">Abhishek Sharma</span>.
-            </h1>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Technology Lead and Application Support Manager with over 10 years of deep expertise in the Fintech and Banking domains. My core strengths lie in complex API integrations, end-to-end merchant lifecycle management, and cross-border payments (UPI, SEPA, SWIFT, Cards). As a strong SRE and operations leader, I have successfully managed 24x7 technical support teams while consistently optimizing payment success rates and system reliability.
-            </p>
-            <div className="flex gap-4 mt-8">
-              <a href="https://twitter.com/abhisharmadev" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">Twitter / X</a>
-              <a href="https://linkedin.com/in/abhisharmadev" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">LinkedIn</a>
+        <div className="max-w-7xl mx-auto px-6">
+          <p className="text-primary text-sm uppercase tracking-widest mb-3">About the founders</p>
+          <h1 className="text-5xl md:text-6xl font-bold mb-12 leading-[1.05]">
+            Meet the <span className="text-gradient">DrishtiSEO</span> team.
+          </h1>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="p-8 rounded-3xl bg-card-gradient border border-border">
+              <h2 className="text-3xl font-bold mb-4">Abhishek Sharma</h2>
+              <p className="text-primary font-semibold mb-4">Founder & CEO</p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Technology Lead and Application Support Manager with over 10 years of deep expertise in the Fintech and Banking domains. My core strengths lie in complex API integrations, end-to-end merchant lifecycle management, and cross-border payments (UPI, SEPA, SWIFT, Cards). As a strong SRE and operations leader, I have successfully managed 24x7 technical support teams while consistently optimizing payment success rates and system reliability.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://twitter.com/abhisharmadev" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">Twitter / X</a>
+                <a href="https://linkedin.com/in/abhisharmadev" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">LinkedIn</a>
+              </div>
             </div>
-          </div>
-          <div className="relative">
-            <div className="absolute -inset-4 bg-mint-gradient opacity-30 blur-3xl rounded-full" />
-            <img
-              src={founderImg}
-              alt="Abhishek Sharma, Founder & CEO of DrishtiSEO — SEO and AI growth studio  in Shamli"
-              className="relative rounded-3xl border border-border shadow-card-soft w-full max-w-md mx-auto"
-              loading="eager"
-            />
+            <div className="p-8 rounded-3xl bg-card-gradient border border-border">
+              <h2 className="text-3xl font-bold mb-4">Jatin Vishwakarma</h2>
+              <p className="text-primary font-semibold mb-4">Co-founder & Fullstack Developer</p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                Fullstack developer specializing in modern web technologies. Expertise in building scalable applications with React, Next.js, Node.js, and cloud services. Passionate about creating seamless user experiences and robust backend systems.
+              </p>
+              <div className="flex gap-4">
+                <a href="https://twitter.com/jatinvishwakarma" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">Twitter / X</a>
+                <a href="https://linkedin.com/in/jatinvishwakarma" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">LinkedIn</a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
