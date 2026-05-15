@@ -14,7 +14,7 @@ export function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src={logoImg} alt="DrishtiSEO Logo" className="w-12 h-12" />
+          <img src={logoImg} alt="DrishtiSEO Logo" className="w-16 h-16" />
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           {nav.map((n) => (
