@@ -34,7 +34,7 @@ export const Route = createFileRoute("/about")({
               description: "Fullstack developer specializing in modern web technologies.",
             }
           ],
-          address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressCountry: "IN" },
+          address: { "@type": "PostalAddress", addressCountry: "IN" },
         }),
       },
     ],
@@ -87,7 +87,7 @@ function AboutPage() {
               </p>
               <div className="flex gap-4">
                 <a href="https://twitter.com/jatinvishwakarma" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">Twitter / X</a>
-                <a href="https://linkedin.com/in/jatinvishwakarma" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/jatin-vishwakarma-a2ba05310/" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-full border border-border hover:border-primary text-sm transition">LinkedIn</a>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ function AboutPage() {
         <h2 className="text-4xl font-bold mb-8">The DrishtiSEO story.</h2>
         <div className="space-y-5 text-lg text-muted-foreground leading-relaxed">
           <p>DrishtiSEO started as a side project in 2019 — a couple of FastAPI engineers (me and a college friend) who got tired of watching great products get buried on page 4 of Google. We started ranking our own tools, then friends', then clients'.</p>
-          <p>Today we're a 9-person studio in HSR Layout, Shamli helping tech founders win the search game while shipping AI products on the side. Most agencies treat SEO as a checklist. We treat it as engineering — site speed, schema, internal links, indexability.</p>
+          <p>Today we're a 9-person studio helping tech founders win the search game while shipping AI products on the side. Most agencies treat SEO as a checklist. We treat it as engineering — site speed, schema, internal links, indexability.</p>
           <p>The bet is simple: write the post nobody else can write, ship the tool nobody else has shipped, and let Google do the distribution.</p>
         </div>
       </section>

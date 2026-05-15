@@ -96,7 +96,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           logo: "/favicon.ico",
           description: "SEO + AI growth studio for tech brands. SEO services, AI micro-SaaS, content creation, and dev templates.",
           founder: { "@type": "Person", name: "Abhishek Sharma" },
-          address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressRegion: "KA", addressCountry: "IN" },
+          address: { "@type": "PostalAddress", addressCountry: "IN" },
           sameAs: ["https://twitter.com/drishtiseo", "https://linkedin.com/company/drishtiseo"],
         }),
       },

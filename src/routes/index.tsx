@@ -35,7 +35,7 @@ export const Route = createFileRoute("/")({
           name: "DrishtiSEO",
           description: "SEO + AI growth studio for tech brands in India.",
           founder: { "@type": "Person", name: "Abhishek Sharma" },
-          address: { "@type": "PostalAddress", addressLocality: "Bengaluru", addressCountry: "IN" },
+          address: { "@type": "PostalAddress", addressCountry: "IN" },
           priceRange: "₹₹",
           areaServed: "Worldwide",
         }),

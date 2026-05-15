@@ -35,7 +35,7 @@ function ContactPage() {
           <div className="space-y-4 text-sm">
             <div className="flex gap-3"><span className="text-primary">📩</span> hello@drishtiseo.studio</div>
             <div className="flex gap-3"><span className="text-primary">📞</span> +91 9760299195</div>
-            <div className="flex gap-3"><span className="text-primary">📍</span> HSR Layout, Bengaluru</div>
+            <div className="flex gap-3"><span className="text-primary">📍</span> India</div>
             <div className="flex gap-3"><span className="text-primary">⏱</span> Mon–Fri, 10am–7pm IST</div>
           </div>
         </div>
