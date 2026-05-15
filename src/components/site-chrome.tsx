@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import logoImg from "@/assets/drishtiseo-logo.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -13,8 +14,8 @@ export function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/70 border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-display font-bold text-lg">
-          <span className="w-8 h-8 rounded-lg bg-mint-gradient flex items-center justify-center text-primary-foreground">⚡</span>
-          <span>Rankforge<span className="text-primary">.</span></span>
+          <img src={logoImg} alt="DrishtiSEO Logo" className="w-8 h-8" />
+          <span>DrishtiSEO</span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm">
           {nav.map((n) => (
@@ -46,8 +47,8 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8 text-sm">
         <div>
           <div className="flex items-center gap-2 font-display font-bold text-lg mb-3">
-            <span className="w-8 h-8 rounded-lg bg-mint-gradient flex items-center justify-center text-primary-foreground">⚡</span>
-            Rankforge<span className="text-primary">.</span>
+            <img src={logoImg} alt="DrishtiSEO Logo" className="w-8 h-8" />
+            DrishtiSEO<span className="text-primary">.</span>
           </div>
           <p className="text-muted-foreground">SEO + AI growth studio for ambitious tech brands.</p>
         </div>
