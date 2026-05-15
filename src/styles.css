@@ -1,0 +1,119 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-mint: var(--mint);
+  --color-mint-glow: var(--mint-glow);
+  --color-forest: var(--forest);
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(0.18 0.04 230);
+  --foreground: oklch(0.97 0.02 160);
+  --card: oklch(0.22 0.05 220);
+  --card-foreground: oklch(0.97 0.02 160);
+  --popover: oklch(0.22 0.05 220);
+  --popover-foreground: oklch(0.97 0.02 160);
+  --primary: oklch(0.82 0.18 165);
+  --primary-foreground: oklch(0.18 0.04 230);
+  --secondary: oklch(0.28 0.06 200);
+  --secondary-foreground: oklch(0.97 0.02 160);
+  --muted: oklch(0.25 0.04 220);
+  --muted-foreground: oklch(0.72 0.04 180);
+  --accent: oklch(0.92 0.20 160);
+  --accent-foreground: oklch(0.18 0.04 230);
+  --destructive: oklch(0.65 0.22 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.30 0.05 210 / 60%);
+  --input: oklch(0.28 0.05 215);
+  --ring: oklch(0.82 0.18 165);
+  --mint: oklch(0.82 0.18 165);
+  --mint-glow: oklch(0.92 0.20 160);
+  --forest: oklch(0.32 0.08 165);
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.32 0.10 165 / 70%), transparent 60%), linear-gradient(180deg, oklch(0.18 0.04 230), oklch(0.16 0.04 235));
+  --gradient-mint: linear-gradient(135deg, var(--mint), var(--mint-glow));
+  --gradient-card: linear-gradient(180deg, oklch(0.24 0.05 220 / 80%), oklch(0.20 0.04 225 / 60%));
+  --shadow-glow: 0 0 60px -10px oklch(0.82 0.18 165 / 50%);
+  --shadow-card: 0 20px 50px -20px oklch(0 0 0 / 50%);
+}
+
+.dark {
+  --background: oklch(0.18 0.04 230);
+  --foreground: oklch(0.97 0.02 160);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body);
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+}
+
+@layer utilities {
+  .bg-hero { background: var(--gradient-hero); }
+  .bg-mint-gradient { background: var(--gradient-mint); }
+  .bg-card-gradient { background: var(--gradient-card); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-card-soft { box-shadow: var(--shadow-card); }
+  .text-gradient {
+    background: var(--gradient-mint);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(oklch(0.82 0.18 165 / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.82 0.18 165 / 0.06) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+  .glow-dot {
+    box-shadow: 0 0 20px var(--mint), 0 0 40px var(--mint);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
