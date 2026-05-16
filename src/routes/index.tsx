@@ -46,12 +46,12 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: "🚀", title: "SEO & Ranking", desc: "Climb to page 1. Technical SEO, on-page, link building, Core Web Vitals.", price: "from ₹25k/mo" },
-  { icon: "🤖", title: "AI Micro-SaaS Builds", desc: "Custom FastAPI + GPT tools. Content generators, dashboards, AI processors.", price: "from ₹40k" },
-  { icon: "🎬", title: "Tech Content & Reels", desc: "Viral Reels, Shorts and newsletters around AI/ML and vibe coding.", price: "from ₹20k/mo" },
-  { icon: "💎", title: "Premium Dev Templates", desc: "Tailwind UI kits, full-stack clones and blog templates that sell.", price: "from ₹4,999" },
-  { icon: "📈", title: "Digital Marketing", desc: "Google Ads, Meta Ads, retargeting, conversion-rate optimisation.", price: "from ₹20k/mo" },
-  { icon: "⚡", title: "Speed & CWV Audit", desc: "Make your site load in <1.5s. Tech audit + implementation.", price: "from ₹15k" },
+  { icon: "🚀", title: "SEO & Ranking", desc: "Climb to page 1. Technical SEO, on-page, link building, Core Web Vitals.", price: "from ₹25k/mo", slug: "seo-services-india" },
+  { icon: "🤖", title: "AI Micro-SaaS Builds", desc: "Custom FastAPI + GPT tools. Content generators, dashboards, AI processors.", price: "from ₹40k", slug: "ai-saas-development" },
+  { icon: "🎬", title: "Tech Content & Reels", desc: "Viral Reels, Shorts and newsletters around AI/ML and vibe coding.", price: "from ₹20k/mo", slug: "content-marketing-saas" },
+  { icon: "💎", title: "Premium Dev Templates", desc: "Tailwind UI kits, full-stack clones and blog templates that sell.", price: "from ₹4,999", slug: "fastapi-development-services" },
+  { icon: "📈", title: "Digital Marketing", desc: "Google Ads, Meta Ads, retargeting, conversion-rate optimisation.", price: "from ₹20k/mo", slug: "digital-marketing-bengaluru" },
+  { icon: "⚡", title: "Speed & CWV Audit", desc: "Make your site load in <1.5s. Tech audit + implementation.", price: "from ₹15k", slug: "google-ads-management-india" },
 ];
 
 const stats = [
@@ -127,7 +127,7 @@ function Index() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((s) => (
-            <div key={s.title} className="group relative p-7 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all hover:-translate-y-1 shadow-card-soft">
+            <Link key={s.title} to="/services/$slug" params={{ slug: s.slug }} className="group relative p-7 rounded-2xl bg-card-gradient border border-border hover:border-primary/50 transition-all hover:-translate-y-1 shadow-card-soft block">
               <div className="text-4xl mb-4">{s.icon}</div>
               <h3 className="text-xl font-bold mb-2">{s.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">{s.desc}</p>
@@ -135,7 +135,7 @@ function Index() {
                 <span className="text-primary text-sm font-semibold">{s.price}</span>
                 <span className="text-muted-foreground group-hover:text-primary group-hover:translate-x-1 transition">→</span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

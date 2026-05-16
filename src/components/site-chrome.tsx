@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import logoImg from "@/assets/drishtiseo-logo.png";
+import { WhatsAppButton, Chatbot } from "@/components/floating-widgets";
 
 const nav = [
   { to: "/", label: "Home" },

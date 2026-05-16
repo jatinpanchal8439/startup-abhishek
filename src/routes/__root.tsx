@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import { WhatsAppButton, Chatbot } from "@/components/floating-widgets";
 
 import appCss from "../styles.css?url";
 
@@ -128,6 +129,8 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <Outlet />
+      <WhatsAppButton />
+      <Chatbot />
     </QueryClientProvider>
   );
 }
