@@ -70,7 +70,7 @@ export function Footer() {
         </div>
         <div>
           <p className="font-semibold mb-3">Get in touch</p>
-          <p className="text-muted-foreground">hello@drishtiseo.studio</p>
+          <p className="text-muted-foreground">hello.drishtiseo.stdio@gmail.com</p>
           <p className="text-muted-foreground">India</p>
         </div>
       </div>

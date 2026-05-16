@@ -33,7 +33,7 @@ function ContactPage() {
           <h2 className="text-2xl font-bold mb-4">Free SEO audit</h2>
           <p className="text-muted-foreground mb-8">Drop your site and goals. We'll send back a 5-page audit + a Loom walkthrough within 48 hours. No fluff, no sales call required.</p>
           <div className="space-y-4 text-sm">
-            <div className="flex gap-3"><span className="text-primary">📩</span> hello@drishtiseo.studio</div>
+            <div className="flex gap-3"><span className="text-primary">📩</span> hello.drishtiseo.stdio@gmail.com</div>
             <div className="flex gap-3"><span className="text-primary">📞</span> +91 9760299195</div>
             <div className="flex gap-3"><span className="text-primary">📍</span> India</div>
             <div className="flex gap-3"><span className="text-primary">⏱</span> Mon–Fri, 10am–7pm IST</div>
